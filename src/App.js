@@ -1,11 +1,12 @@
-import logo from './logo.svg'
 import './App.css'
+import GodownCount from './GodownCount'
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <header className="App-header">
         <h1>Implement Redux on Own</h1>
+        <GodownCount></GodownCount>
       </header>
     </div>
   )
