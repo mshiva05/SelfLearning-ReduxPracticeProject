@@ -1,5 +1,5 @@
 import React from 'react'
-import { connect, useSelector } from 'react-redux'
+import { connect } from 'react-redux'
 import { buyMobile, sellMobile, buyLaptop, sellLaptop } from './redux/actions'
 
 function GodownCount(props) {
@@ -8,7 +8,9 @@ function GodownCount(props) {
     <>
       <header> GODOWN COMPONENT</header>
       <section>
-        <h2>Laptop Counter:{props.laptopCount}</h2>
+        <p style={{ textAlign: 'center' }}>
+          Laptop Counter:{props.laptopCount}
+        </p>
         <div
           style={{
             display: 'flex',
@@ -17,11 +19,13 @@ function GodownCount(props) {
           }}
         >
           <button onClick={props.buyLaptop}> PURCHASE </button>
-          <button onClick={props.sellLaptop}> SELL </button>
+          <button onClick={props.sellLaptop}> DELIVERY </button>
         </div>
       </section>
       <section>
-        <h2>Mobile Counter:{props.mobileCount}</h2>
+        <p style={{ textAlign: 'center' }}>
+          Mobile Counter:{props.mobileCount}
+        </p>
         <div
           style={{
             display: 'flex',
@@ -30,9 +34,11 @@ function GodownCount(props) {
           }}
         >
           <button onClick={props.buyMobile}> PURCHASE </button>
-          <button onClick={props.sellMobile}> SELL </button>
+          <button onClick={props.sellMobile}> DELIVERY </button>
         </div>
       </section>
+      <br></br>
+      <br></br>
     </>
   )
 }
