@@ -24,8 +24,8 @@ function GodownCounter1() {
 
   return (
     <>
-      <header> GODOWN COMPONENT 1</header>
-      <section>
+      {/* <header> GODOWN COMPONENT 1</header> */}
+      <section className="godown">
         <p style={{ textAlign: 'center' }}>Laptop Counter:{laptopCounter1}</p>
         <div
           style={{
@@ -38,7 +38,7 @@ function GodownCounter1() {
           <button onClick={sellLaptop}> DELIVERY </button>
         </div>
       </section>
-      <section>
+      <section className="godown">
         <p style={{ textAlign: 'center' }}>Mobile Counter:{mobileCounter1}</p>
         <div
           style={{

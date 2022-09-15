@@ -2,4 +2,4 @@
 ::Initial Requirement::
 -----------------------
 1. Create basic project that supports redux.
-2. Setup store, reducers and actions to support basic operations
+2. Setup store, reducers and actions to support basic operations.
